@@ -1,0 +1,73 @@
+<!-- Field teks dan password -->
+
+<html>
+<head>
+	<title>Belajar PW </title>
+</head>
+<body>
+	<form>
+	Nama depan:
+	<input type="text" name="namadepan">
+	<br>
+	Nama belakang:
+	<input type="text" name="namabelakang">
+	<br>
+	Password:
+	<input type="password" name="password">
+	</form>
+	
+</body>
+</html> 
+
+
+
+
+
+
+<!-- Checkbox dan tombol radio -->
+
+<html>
+<head>
+	<title>Belajar PW</title>
+</head>
+<body>
+	<form>
+	
+	Pria :
+	<input type="radio" name="Sex" value="pria">
+	<br>
+	Wanita :
+	<input type="radio" name="Sex" value="wanita" checked>
+	</form>
+	
+</body>
+</html>
+
+<!-- Combobox -->
+<html>
+<body>
+Fakultas :
+<select>
+  <option nama="Fakultas" value="FTIK">FTIK</option>
+  <option nama="Fakultas" value="FISIP">FISIP</option>
+  <option nama="Fakultas" value="FEKON">FEKON</option>
+ </select>
+ <br>
+</body>
+</html>
+<!-- Checkbox -->
+
+
+<html>
+<body>
+<br>
+<form method=post>
+        Pilih Mobil anda<br>
+        <h3>Daftar Mobil</h3>
+        <p>
+        <input type=checkbox name=c1 checked>Jaguar<br>
+        <input type=checkbox name=c2 >Fiat<br>
+        <input type=checkbox name=c3 >Volvo<br>
+        
+    </body>
+</html>
