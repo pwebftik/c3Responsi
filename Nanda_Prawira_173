@@ -1,0 +1,58 @@
+<html>
+<head>
+	<title>Informasi Mahasiswa</title>
+</head>
+<body background="gambar/1.png" bgcolor="yellow" text="red">
+<img src="gambar/2.jpg" alt="Metera" align="center" width="100" height="50">
+	<fieldset>
+		<legend>Isi Data Mahasiswa</legend>
+		<form>
+		<table>
+			<tr>
+			<td>Nama Depan</td>
+			<td>:</td>
+			<td><input type="text" name="namadepan" placeholder="namadepan"></td>
+			</tr>
+			<tr>
+			<td>Nama Belakang</td>
+			<td>:</td>			
+			<td><input type="text" name="namabelakang"placeholder="namabelakang"><td>
+			</tr>
+			<tr>
+			<td>Password</td>
+			<td>:</td>	
+			<td><input type="password" name="password"placeholder="password"><td>
+			</tr>
+			<tr>
+			<td>Jenis Kelamin</td>
+			<td>:</td>
+			<td>Male<input type="radio" name="Gender" value="laki-laki">Female<input type="radio" name="Gender" value="perempuan"></td>
+			</tr>
+			<tr>
+			<td>Fakultas</td>
+			<td>:</td>
+			<td><select name="fakultas">
+				<option value="ftik">FTIK</option>
+				<option value="fkip">Tambang</option>
+				<option value="fpik">Alat Berat</option>
+			</td>
+			</tr>
+			<tr><td>Kendaraan yang dimiliki:<td></tr>
+			<tr>
+			<td>Sepeda</td>
+			<td><input type="checkbox" name="Sepeda"></td>
+			</tr>
+			<tr></tr>
+			<tr>
+			<td>Motor</td>
+			<td><input type="checkbox" name="Motor"></td>
+			</tr>
+			<tr>
+			<td>Mobil</td>
+			<td><input type="checkbox" name="Mobil"></td>
+			</tr>
+			</table>
+			</form>		
+	</fieldset>
+</body>
+</html>
