@@ -4,70 +4,66 @@
 <head>
 	<title>Belajar PW </title>
 </head>
-<body>
-	<form>
-	Nama depan:
-	<input type="text" name="namadepan">
-	<br>
-	Nama belakang:
-	<input type="text" name="namabelakang">
-	<br>
-	Password:
-	<input type="password" name="password">
-	</form>
+<body background="img/c.jpg" bgcolor="#8767888" text="black">
+<p align="center">
+<img src="img/a.jpg" alt="WEB" width="720" height="300"><br>
+</p>
+Gambar sebelah <img src="img/b.jpg" align="right" width="300" height="400">kiri<br>
+<FIELDSET>
+<legend><h1> Biodata mahasiswa </h1></legend>
+	<form >
+	<table>
+		<tr>
+			<td>Nama depan</td>
+			<td>:</td>
+			<td><input align="center" type="text" name="namadepan"></td>
+		</tr>
+		<tr>
+			<td>Nama Belakang</td>
+			<td>:</td>
+			<td><input align="center" type="text" name="namabelakang"></td>
+		</tr>
+		<tr>
+			<td>Password</td>
+			<td>:</td>
+			<td><input align="center" type="password" name="password"></td>
+			</tr>
+			<tr>
+			<td>Jenis Kelamin </td>
+	<td>:</td>
+	<td>
+	<input type="radio" name="Sex" value="pria"> pria	
 	
-</body>
-</html> 
-
-
-
-
-
-
-<!-- Checkbox dan tombol radio -->
-
-<html>
-<head>
-	<title>Belajar PW</title>
-</head>
-<body>
-	<form>
-	
-	Pria :
-	<input type="radio" name="Sex" value="pria">
-	<br>
-	Wanita :
-	<input type="radio" name="Sex" value="wanita" checked>
-	</form>
-	
-</body>
-</html>
-
-<!-- Combobox -->
-<html>
-<body>
-Fakultas :
-<select>
+	<input type="radio" name="Sex" value="wanita" checked> wanita
+	</td>
+		</tr>
+<tr>
+<td>Fakultas</td>
+<td>:</td>
+<td><select>
   <option nama="Fakultas" value="FTIK">FTIK</option>
   <option nama="Fakultas" value="FISIP">FISIP</option>
   <option nama="Fakultas" value="FEKON">FEKON</option>
  </select>
- <br>
-</body>
-</html>
-<!-- Checkbox -->
-
-
-<html>
-<body>
-<br>
-<form method=post>
-        Pilih Mobil anda<br>
+ </td>
+ </tr>
+ <tr>
+<td><form method=post>
+        Pilih Mobil anda
         <h3>Daftar Mobil</h3>
         <p>
         <input type=checkbox name=c1 checked>Jaguar<br>
         <input type=checkbox name=c2 >Fiat<br>
         <input type=checkbox name=c3 >Volvo<br>
-        
+        </p>
+        </td>
+        </tr>
+        <tr>
+		<td><input type="submit" name="Submit" value="Submit">
+		</td>
+	</tr>
+        </form>
+        </FIELDSET>
+        </table>
     </body>
 </html>
