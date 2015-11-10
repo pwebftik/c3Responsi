@@ -1,0 +1,98 @@
+<html>
+<head>
+<style type="text/css">
+a:link {color:#ff0000;}
+a.one:visited {color: #0000ff;}
+a.one:hover 
+{
+	font-size:500%;
+	visibility:visible; 
+    transition:  0.7s;
+}
+</style>
+<title> Making Form </title>
+</head>
+<body background="img/logo.jpg" text="Brown">
+<p align="center">
+<img src="img/Jellyfish.jpg" alt="TEKS WEB" width="720" height="250"><br>
+</p>
+Tes gambar <img src="img/1.jpg" align="right" width="500" height="500"><br>
+<fieldset>
+<LEGEND>BIODATA MAHASISWA</LEGEND>
+
+
+<br>
+
+	<form>
+	<table border ="1">
+	<tr>
+		<td>Nama Depan</td>
+			<td>:</td>
+		<td><input type= "text" name="namadepan">
+		</td>
+	</tr>
+	<tr>
+	<td>Nama Belakang</td>
+	<td>:</td>
+	<td><input type= "text" name="namabelakang">
+	</td>
+	</tr>
+	<tr>
+	<td>Password</td>
+	<td>:</td>
+	<td>
+		<input type= "password" name="password">
+			</td>
+	</tr>
+	<tr>
+	<td>Jenis Kelamin</td>
+	<td>:</td>
+	<td>
+		<input type= "radio" name="Sex" value="pria" checked>Pria
+		<input type= "radio" name="Sex" Value="wanita">Wanita
+		</td>
+	</tr>
+	<tr>
+	<td>Fakultas</td>
+	<td>:</td>
+	<td>
+	<select>
+  		<option nama="fakultas" value="FKIP">FKIP</option>
+  		<option nama="fakultas" value="Kehutanan">Kehutanan</option>
+  		<option nama="fakultas" value="ILKOM">ILKOM</option>
+  		<option nama="fakultas" value="FTIK">FTIK</option>
+  		<option nama="fakultas" value="PGSD">PGSD</option>
+  	</select>
+  	</td>
+  	</tr>
+  	<tr>
+  	<td>Pilih Kendaraan yang dimiliki</td>
+  	<td>:</td>
+  	<td>
+  	<input type= "checkbox" name="Sepeda" checked>Sepeda
+  	<input type= "checkbox" name="Motor">Motor
+  	<input type= "checkbox" name="Mobil">Mobil
+  	<input type= "checkbox" name="Truk">Truk
+  	<input type= "checkbox" name="Pesawat">Pesawat
+  	<input type= "checkbox" name="Helikopter">Helikopter
+  	<input type= "checkbox" name="Ufo">Ufo
+
+  	</td>
+  	</tr>
+
+<tr>
+  	<tr>
+  	<td></td>
+  	<td></td> 
+  	<td><input type="submit" value="Submit">
+  	<input type="reset" value="Reset"></td>
+  	</tr>
+</tr>
+
+  	</table>
+	</form>
+
+</fieldset>
+<p><a class="one" href="hlm1.htm">Efek Animasi Tulisank</a></p>	
+</body>	
+</html>
