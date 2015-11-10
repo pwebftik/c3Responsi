@@ -1,0 +1,291 @@
+<html><head>
+<style type="text/css">
+body
+{ 
+background: #00ff00 
+url("gan.gif") 
+no-repeat fixed 
+center center
+}
+</style>
+</head>
+<body>
+<p>
+<b>Catatan:</b>
+Properti background-attachment dan background-position tidak bisa digunakan dalam browser Netscape 4.0.
+</p>
+<p>Ada teks disini</p>
+<p>Tuliskan sekehendak kalian</p>
+<p>Terserah apa saja</p>
+<p>Yang penting ada tulisannya</p>[
+[[
+
+
+
+2. Penanganan font
+
+
+<style type="text/css">
+p.normal {font-weight: normal}
+p.tebal {font-weight: bold}
+p.teballl {font-weight: 900}
+p.lengkap
+{
+font: italic small-caps 900 12px arial
+}
+</style>
+
+
+<p class="normal">
+Perhatikan paragraf ini</p>
+<p class="tebal">
+Bandingkan dengan paragraf diatasnya</p>
+<p class="teballl">
+Bandingkan yang ini juga</p>
+<p class="lengkap">
+Paragraf dengan semua atribut font dimasukkan</p>
+
+
+
+3. Pembuatan border
+
+
+<style type="text/css">
+p.borderous 
+{
+border-style: double;
+border-width: 5px 10px 1px medium;
+border-color: #ff0000 
+#00ff00 #0000ff 
+rgb(250,0,255)
+}
+</style>
+
+
+<p class="borderous">
+<b>Catatan:</b> Properti "border-color" dan "border-width" tidak dikenali oleh browser Internet Explorer bila digunakan secara langsung. Gunakan properti "border-style" untuk menyiapkan border dalam Internet Explorer.<br>
+Internet Explorer 5.5 mendukung semua border style. Internet Explorer 4.0 - 5.0 tidak mendukung nilai "dotted" dan "dashed" </p>
+
+
+
+4. Pengaturan margin
+
+
+<style type="text/css">
+p.margin {margin: 2cm 4cm 3cm 80px}
+</style>
+
+
+<p>
+Yang ini adalah paragraf biasa tanpa pengaturan margin, sepertinya biasa saja.
+</p>
+<p class="margin">
+Bandingkan dengan tampilan paragraf ini. Coba Anda kecilkan ukuran window browser agar terlihat lebih jelas perbedaannya.
+</p>
+<p>
+This is a paragraph
+</p>
+
+
+
+5. Mengatur padding pada sel tabel
+
+
+<style type="text/css">
+td {padding: 1.5cm}
+td.value2 {padding: 0.5cm 2.5cm}
+</style>
+
+
+<table border="1">
+<tbody><tr>
+<td>
+Ini adalah tabel dengan sel yang menggunakan padding sama pada setiap sisinya (1,5cm).
+</td>
+</tr>
+</tbody></table>
+<br>
+<table border="1">
+<tbody><tr>
+<td class="value2">
+Bandingkan dengan tampilan tabel ini. Padding atas dan bawah memiliki nilai 0,5cm, sedangkan padding kanan dan kiri nilainya 2,5cm.
+</td>
+</tr>
+</tbody></table>
+
+
+
+6. Menggunakan list
+
+
+<style type="text/css">
+ul 
+{
+list-style: square outside url("kecil.jpg")
+}
+</style>
+
+
+<p>Disini Anda menggunakan gambar berukuran kecil sebagai bullet untuk list. Properti outside akan menyebabkan list menjadi lebih rapi bila terdiri atas item yang berupa kalimat panjang dan window browser berukuran kecil.</p>
+<ul>
+<li>Kopi</li>
+<li>Teh</li>
+<li>Coca Cola</li>
+</ul>
+
+
+
+7. Elemen latar depan dan latar belakang
+
+
+<style type="text/css">
+img.x1
+{
+position:absolute;
+left:0;
+top:0;
+z-index:1
+}
+img.x2
+{
+position:absolute;
+left:0;
+top:100;
+z-index:-1
+}
+</style>
+
+
+<p><b>Catatan:</b> Netscape 4 tidak mendukung properti "z-index".</p>
+<h1>Sepertinya Heading ini terhalang oleh gambar</h1>
+<img class="x1" src="ariana.jpg" width="100" height="80"> 
+<p>Nilai default z-index adalah 0. Z-index 1 memiliki prioritas lebih tinggi, sedangkan Z-index â€“1 memiliki prioritas lebih rendah.</p>
+<p></p>
+<img class="x2" src="ariana.jpg" width="100" height="80">
+<p>Sekarang Anda bisa membandingkan dengan tampilan di bagian bawah ini. Apakah masih terhalang gambar?</p>
+
+
+
+8. Mengubah tampilan Link
+
+
+<style type="text/css">
+a:link {color: #ff0000}
+a.one:visited {color: #0000ff}
+a.one:hover {color: #ffcc00}
+a.two:visited {color: #0000ff}
+a.two:hover {font-size: 150%}
+a.three:visited {color: #0000ff}
+a.three:hover {background: #66ff66}
+a.four:visited {color: #0000ff}
+a.four:hover {font-family: fixedsys}
+a.five:visited {color: #0000ff; text-decoration: line-through}
+a.five:hover {text-decoration: overline}
+</style>
+
+
+<p>Gerakkan pointer mouse di atas link-link di bawah ini untuk membuat link tersebut berubah tampilannya.</p>
+<p><a class="one" href="hlm1.htm" "=">Mengubah properti color</a></p>
+<p><a class="two" href="hlm2.htm"> Mengubah properti font-size</a></p>
+<p><a class="three" href="hlm3.htm"> Mengubah properti background-color</a></p>
+<p><a class="four" href="hlm4.htm"> Mengubah properti font-family</a></p>
+<p><a class="five" href="hlm5.htm"> Mengubah properti text-decoration</a></p>
+
+9. Animasi
+<p>Animasi Teks Berjalan</p>
+<marquee loop="5">Tuh Diatas Ada yg Muter</marquee>
+<marquee direction="right" style="background-color: green;" width="125">Tuh Diatas Ada yg Muter</marquee><marquee direction="left" style="background-color: blue;" width="125">Tuh Diatas Ada yg Muter</marquee>
+<marquee style="font-style: italic;">Tuh Diatas Ada yg Muter</marquee>
+<html>
+<head>
+	<style type="text/css">
+body{
+	background: #00ff00 url("ha.jpg") no-repeat fixed top;
+	}
+	p.borderous {
+		/*border: 10px dotted blue;*/
+		border-style: double;
+		border-width: 5px 10px 1px 15px;
+		border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+	}
+	p.margin {margin: 2cm 4cm 3cm 80px}
+	td{padding: 1.5cm}
+	td.value2 {padding: 0.5cm 2.5cm}
+	ul {
+		list-style: square outside url("unmul.jpg");
+	}
+	img.x1{
+		position: absolute;
+		right: 100;
+		top: 0;
+		z-index: 1;
+	}img.x2{
+		position: absolute;
+		right: 0;
+		top: 100;
+		z-index: 1;
+	}
+	
+	<html lang="en">
+   <head>
+      <meta charset="utf-8">
+		<title>Contoh Dasar Animasi CSS3 - Nyekrip</title>
+	<style>
+	body {
+	  background:azure;
+	  font-size:15px;
+	}
+	div {
+		width: 200px;
+		height: 200px;
+		background-color: coral;
+		position:absolute !important;
+		top:calc(50% - 100px);
+		left:calc(50% - 100px);
+		-webkit-animation-name: kotak-ke-lingkaran; 
+		-webkit-animation-duration:  5s;
+		-webkit-animation-delay: 1s;
+		-webkit-animation-iteration-count: infinite;
+		-webkit-animation-timing-function: linear;
+		-webkit-animation-direction: alternate;
+	}
+	@-webkit-keyframes kotak-ke-lingkaran {
+	  0%  {
+		border-radius:0 0 0 0;
+		background:coral;
+		transform:rotate(0deg);
+	  }
+	  25%  {
+		border-radius:50% 0 0 0;
+		background:darksalmon;
+		transform:rotate(45deg);
+	  }
+	  50%  {
+		border-radius:50% 50% 0 0;
+		background:indianred;
+		transform:rotate(90deg);
+	  }
+	  75%  { 
+		border-radius:50% 50% 50% 0;
+		background:lightcoral;
+		transform:rotate(135deg);
+	  }
+	  100% {  
+		border-radius:50%;
+		background:darksalmon;
+		transform:rotate(180deg);
+	  }
+	}
+	</style>
+</head>
+<body>
+   
+    <div></div>
+
+
+
+
+
+
+
+</body></html>

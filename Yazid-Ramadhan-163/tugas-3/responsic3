@@ -1,0 +1,50 @@
+<html>
+<head>
+<title>Pengisian Data Mahasiswa</title>
+</head>
+<body background="gambar 1.jpg" text="red">
+<fieldset>
+<legend>
+	Isi Data Mahasiswa
+<form>
+</legend>
+<table>
+<tr>
+	<td>Nama Depan</td>
+	<td>:</td>
+	<td><input type="text" placeholder="Nama Depan"></td>
+</tr>
+<tr>
+	<td>Nama Belakang</td>
+	<td>:</td> 
+	<td><input type="text" placeholder="Nama Belakang"></td>
+</tr>
+<tr>
+	<td>Password</td>
+	<td>:</td>
+	<td><input type="password" placeholder="password"></td>
+</tr>
+<tr>
+	<td>Jenis Kelamin</td>
+	<td>:</td> 
+	<td>Male <input type="radio" name="Gender" value="laki-laki"></td> <td>female<input type="radio" name="Gender" value="Perempuan"></td>
+</tr>
+<tr>
+	<td>Fakultas</td>
+	<td>:</td> 
+	<td><select name="Fakultas"> 
+	<option value="Ftik">Ftik
+	<option value="Fekon">Ekonomi Pembangunan 
+	<option value="Fisipol">Ilmu pemerintahan</select> </td>
+</tr>
+<tr>
+	<td>Kenderaan</td>
+	<td>:</td>
+	<td>Mobil <input type="checkbox" name="mobil"> 
+	Sepeda Motor <input type="checkbox" name="motor">
+	Sepeda <input type="checkbox" name="sepeda"> </td></form>
+	<input type="submit" value="Daftar">
+</tr>
+</fieldset>
+</body>
+</html>

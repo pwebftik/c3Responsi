@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title></title>
+</head>
+<style type="text/css">
+    @-moz-keyframes spin { 
+    25% { -moz-transform: rotate(-45deg); }
+    75% { -moz-transform: rotate(45deg); } 
+    }
+    @-webkit-keyframes spin { 
+    25% { -webkit-transform: rotate(-45deg); }
+    75% { -webkit-transform: rotate(45deg); } 
+    }
+    @keyframes spin { 
+    25% { -webkit-transform: rotate(-45deg); transform:rotate(-45deg); }
+    75% { -webkit-transform: rotate(45deg); transform:rotate(45deg); } 
+}
+    .shake{
+        position:absolute !important;
+        top:40%;
+        left:45%;
+        animation:spin 1.33s linear infinite;
+    }
+
+    .shake:hover{
+        -webkit-animation-play-state: paused;
+        -moz-animation-play-state: paused;
+        -o-animation-play-state: paused;
+        animation-play-state: paused;
+
+    }
+
+</style>
+<body>
+<small>*hover!</small>
+    <img class="shake" src="img/shake.png">
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<html>
+<head>
+	<title>Responsi 4</title>
+</head>
+<style type="text/css">
+	body 			{
+	background: blue url("img/back.gif") no-repeat fixed center;
+	}
+	p.lengkap		{
+	font: italic small-caps 900 12px arial;
+	}
+	p.tebal			{
+	font-weight: bold;
+	}
+	p.borderous		{
+	border-style: double;
+	border-width: 5px 10px 1px medium;
+	border-color: #ff000 #00ff00 #0000ff rgb(250,0,255);
+	}
+	td 				{
+	padding: 1cm 3cm
+	}
+	p.margin 		{
+	margin: 2cm 3cm 4cm 80px
+	}
+	ul 				{
+	list-style: square outside url("img/kecil.jpg"); 
+	}
+	a:link 			{
+	color: yellow
+	}
+	a.one:visited	{
+	color: green
+	}
+	a.one:hover		{
+	color: #ffcc00;
+	font-size: 150%;
+	}
+</style>
+<body text="white">
+<h1>Kepala</h1>
+	<p class="tebal">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+	<p class="lengkap">consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="borderous">Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+	<p class="margin"> ini pake margin, <br>
+	margin dipake disini Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo</p>
+<h2 align="center"> Table pakek padding</h2>
+<table align="center" border="1">
+	<tr>
+		<td>Satu</td>
+		<td>Dua</td>
+		<td>Tiga</td>
+	</tr>
+	<tr>
+		<td>Empat</td>
+		<td>Lima</td>
+		<td>Enam</td>
+	</tr>
+</table>
+<h3>Daftar menu</h3>
+<ul>
+	<li><a class="one" href="#">Kopi</a></li>
+	<li><a class="one" href="#">Teh</a></li>
+	<li><a class="one" href="#">Coca Cola</a></li>
+</ul>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<html>
+<head>
+	<style type="text/css">
+	body{
+			background: #00ff00 url("music.gif") no-repeat fixed center;
+			background-po:
+		}
+	p.normal {font-weight:normal;}
+	p.tebal {font-weight:bold;}
+	p.teballl{font-weight:900;}
+	p.lengkap{font: italic small-caps 900 12px arial;}
+	p.borderous{border-style:double;
+		border-width:5px 10px 1px medium;
+		border-color: #ff0000 #00ff00 #000ff rgb(250,0,255);}
+		
+		.margin{margin:2cm 4cm 3cm 80px}
+		td {padding: 1.5}
+	td.value2{padding: 0.5cm 2.5cm}
+	ul {list-style: square outside url("abstrak.jpg");}
+
+	img.x1{position:absolute;
+		left:0;
+		top:0;
+		z-index:1;
+			}
+	img.x2{position:absolute;
+			left:0;
+			top:100;
+			z-index:-1;}
+
+	a:link {color: #ff0000}
+	a.one:visited{color:#0000ff}
+	a.one:hover{color:#ffcc00}
+	a.two:visited{color:#0000ff}
+	a.two:hover{font-size:150%}
+	a.three:visited{color:#0000ff}
+	a.three:hover{color:blue;
+	transition-duration:1s;}
+	a.four:visited{color:#0000ff}
+	a.four:hover{font-family:fixedsys}
+	a.five:visited{color:#0000ff; text-decoration: line-through}
+	a.five:hover{text-decoration: overline}
+
+	div {
+    padding:10px;
+    background:darkblue;
+    color:white;
+    float:left;
+    -webkit-transition:all 0.2s linear;}
+div:hover {
+    background:orange;}
+
+     h3 {
+    -webkit-animation-duration: 10s;
+    -webkit-animation-name: slidein;
+     }
+ 	@-webkit-keyframes slidein {
+    0% {margin-left: 100%;
+      width: 300%}
+   
+    100% {margin-left: 0%;
+      width: 100%;}
+  }
+
+  
+
+	</style>
+</head>
+<body>
+	<h1>Sepertinya heading ini terhalang oleh gambar</h1><!--percobaan 7-->
+<img class="x1" src="abstrak.jpg" width="100" height="80">
+<p>yang ini terhalang </p>
+<img class="x2" src="abstrak.jpg" width="100" height="80">
+<br>
+<br>
+<p>yang ini sudah tidak terhalang</p>
+
+<p class="normal"><!--percobaan 2-->
+	Perhatikan paragraf ini</p>
+<p class="tebal">
+	Bandingkan dengan paragraf diatasnya</p>
+<p class="teballl">
+	Bandingkan yang ini juga</p>
+<p class="lengkap">
+	Paragraf dengan semua atribut font dimasukkan </p>
+	<p class="borderous"><!--percobaan 3-->
+		<b>catatan:</b>tidak didukung oleh internet explorer versi lama</p>
+		<p>
+		Yang ini adalah paragraf biasa tanpa pengaturan margin, sepertinya biasa saja.</p>
+		<p class="margin"><!--percobaan 4-->
+			Bandingkan dengan tampilan paragraf ini.coba anda kecilkan ukuran windows browser agar terlihat lebih jelas perbedaannya</p>
+			<p>this is a paragraph</p>
+			<table border="1"><!--percobaan 5-->
+		<tr>
+			<td>Ini adalah tabel dengan sel yang menggunakan padding sama pada setiap s isinya (1,5).
+			</td>
+		</tr>
+	</table>
+	<br>
+	<table border="1">
+		<tr>
+			<td class="value2">
+				bandingkan dengan tampilan tabel ini. padding atas dan bawah memiliki nilai 0,5cm, sedangkan padding kanan dan kiri nilainya 2,5cm.
+			</td>
+		</tr>
+	</table>
+	<p>disini anda menggunakan gambar berukuran kecil sebbagai bullet untuk list. properti outside <!--percobaan 6-->akan menyebabkan list menjadi lebih rapi bila terdiri atas item yang berupa kalimat panjang dan window browser berukuran kecil</p>
+<ul>
+	<li>Kopi</li>
+	<li>Teh</li>
+	<li>coca cola</li>
+</ul>
+
+<p>Gerakkan pointer mouse diatas link-link di bawah ini untuk membuat link tersebut berubah tampilannya.</p><!--percobaan 8-->
+<p><a class="one" href="h1lm1.html">mengubah properti color</a></p>
+<p><a class="two" href="h1lm2.html">mengubah properti font-size</a></p>
+<p><a class="three" href="h1lm3.html">mengubah properti background-color</a></p>
+<p><a class="four" href="h1lm4.html">mengubah properti font-family</a></p>
+<p><a class="five" href="h1lm5.html">mengubah properti text-decoration</a></p>
+<div>bingung saya mau nulis apa</div>
+<br>
+<h3>jika direfresh akan datang dari sebelah kanan</h3>
+
+
+</body>
+</html>

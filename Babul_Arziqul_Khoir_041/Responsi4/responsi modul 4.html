@@ -1,0 +1,259 @@
+<html>
+<head>
+
+<link rel="stylesheet" type="text/css" href="css/style17.css" />
+<link rel="stylesheet" type="text/css" href="css/stylegambar.css" />
+
+<link rel="shortcut icon" href="img/favicon.ico">
+<link rel="stylesheet" type="text/css" href="fonts/font-awesome-4.2.0/css/font-awesome.min.css" />
+
+ <div class="content">
+            <svg viewBox="0 0 600 300">
+
+                <!-- Symbol with text -->
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">
+                        Text
+                    </text>
+                </symbol>
+
+                <!-- Clippath  with text -->
+                <clippath id="cp-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em" class="text--line">
+                        Babul
+                    </text>
+                </clippath>
+
+                <!-- Group for shadow -->
+                <g clip-path="url(#cp-text)" class="shadow">
+                    <rect width="100%" height="100%" class="anim-shape anim-shape--shadow"></rect>
+                </g>
+
+                <!-- Group with clippath for text-->
+               <g clip-path="url(#cp-text)" class="colortext">
+                    <!-- Animated shapes inside text -->
+                    <rect width="100%" height="100%" class="anim-shape"></rect>
+                    <rect width="80%" height="100%" class="anim-shape"></rect>
+                    <rect width="60%" height="100%" class="anim-shape"></rect>
+                    <rect width="40%" height="100%" class="anim-shape"></rect>
+                    <rect width="20%" height="100%" class="anim-shape"></rect>
+                </g>
+
+                <!-- Transparent copy of text to keep patterned text selectable -->
+               <use xlink:href="#s-text" class="text--transparent"></use>
+
+            <!--<svg viewBox="0 0 600 300">
+
+               
+                <symbol id="s-text">
+                    <text text-anchor="middle" x="50%" y="50%" dy=".35em">
+                       Babul
+                    </text>
+                </symbol>
+
+                
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>
+                <use xlink:href="#s-text" class="text"></use>-->
+
+            </svg>
+            
+</div>
+<title>Responsi Modul 4</title>
+
+<div align="center">
+	<a href="#no1" class="menu">Nomor 1</a>
+	<a href="#no2" class="menu">Nomor 2</a>
+	<a href="#no3" class="menu">Nomor 3</a>
+	<a href="#no4" class="menu">Nomor 4</a>
+	<a href="#no5" class="menu">Nomor 5</a>
+	<a href="#no6" class="menu">Nomor 6</a>
+	<a href="#no7" class="menu">Nomor 7</a>
+	<a href="#no8" class="menu">Nomor 8</a>
+</div>
+
+</head>
+<body>
+<style type="text/css">
+	body
+	{
+		background:#22313F; /*url("gambar.gif") no-repeat fixed center*/;
+	}
+	p.normal{font-weight:normal;}
+	p.tebal{font-weight:bold;}
+	p.teball{font-weight:900;}
+	p.lengkap{font:italic small-caps 900 12px arial;}
+	p.borderous
+	{
+		border-style:double;
+		border-width:5px 10px 1px medium;
+		border-color:#ff0000 #00ff00 #0000ff rgb(250,0255);
+	}
+	p.margin{ margin:2cm 4cm 3cm 80px;}
+	td{border-color: red; color: black; padding:1.5cm;}
+	td.value2{border-color: red; color: black; padding:0.5cm 2cm;}
+	ul{list-style:square  outside url(img/b.png);}
+	img.x1{
+			position:fixed;
+			left:0;
+			top:0;
+			z-index:1;
+	}
+	img.x2{
+		position:fixed;
+		left:0;
+		top:100;
+		z-index:-1;
+		opacity:0.8;
+	}
+	
+	a.one:visited{color:000ff;}
+	a.one:hover{color:ffcc00;}
+	a.two:visited{color:000ff;}
+	a.two:hover{font-size:150%;}
+	a.three:visited{color:000ff;}
+	a.three:hover{background:#66ff66;}
+	a.four:visited{color:000ff;}
+	a.four:hover{font-family:Verdana;}
+	a.five:visited{color:000ff; text-decoration:line-through;}
+	a.five:hover{text-decoration:overline;} 
+</style>
+<div class="div" >
+<!-- Nomor 1 -->
+<a name="#no1"><h1>Nomor 1</h1></a>
+
+<p>
+	<b>Catatan:</b>
+    Properti background-attachment dan background-position tidak bisa digunakan dalam browser netscape 4.0.
+</p>
+<p>Ada teks disini</p>
+<p>Tuliskan Sekehendak kalian</p>
+<p>Terserah apa saja</p>
+<p>Yang penting ada tulisannya</p>
+
+<!-- Nomor 2 -->
+<a name="no2"><h1>Nomor 2</h1></a>
+<p class="normal">Perhatikan Paragraf ini</p>
+<p class="tebal">Bandingkan dengan paragraf diatasnya</p>
+<p class="teball">Bandingkan yang ini juga</p>
+<p class="lengkap">Paragraf dengan semua atribut font dimasukkan</p>
+
+<!-- Nomor 3 -->
+<a name="no3"><h1>Nomor 3</h1></a>
+<p class="borderous">
+	<b>Catatan :</b>
+    tidak didukung oleh internet explorer versi lama
+</p>
+
+<!-- Nomor 4 -->
+<a name="no4"><h1>Nomor 4</h1></a>
+<p>Yang ini adalah paragraf biasa tanpa pengaturan margin, sepertinya biasa saja.</p>
+<p class="margin">Bandingkan dengan tampilan paragraf ini. coba anda kecilkan ukuran window browser agar terlihat lebih jelas perbedaannya.</p>
+<p> This is a paragraph</p>
+
+<!-- Nomor 5 -->
+<a name="no5"><h1>Nomor 5</h1></a>
+<table border="1">
+	<tr>
+    	<td>Ini adalah tabel dengan sel yang menggunakan padding sama pada setiap sisinya(1,5cm).</td>
+    </tr>
+</table><br>
+<table border="1">
+	<tr>
+    	<td class="value2">Bandingkan dengan tampilan tabel ini. Padding atas bawah memiliki nilai 0,5cm, sedangkan padding kana kiri nilainya 2,5 cm.</td>
+    </tr>
+</table>
+
+<!-- Nomor 6-->
+<a name="no6"><h1>Nomor 6</h1></a>
+<p>Disini anda menggunakan gambar berukuran kecil sebagai bullet untuk list. properti outside akan menyebabkan list menjadi lebih rapi bila terdiri atas item yang berupa kalimat panjang dan window browser berukuran kecil.</p>
+<ul>
+	<li>Kopi</li>
+    <li>Teh</li>
+    <li>Coca Cola</li>
+</ul>
+
+<!-- Nomor 7 -->
+<a name="no7"><h1>Nomor 7</h1></a>
+<p>
+	<b>Catatan:</b>
+    Netscape 4 tidak mendukung properti "z-index".
+</p>
+<h1>Sepertinya heading ini terhalang oleh gambar</h1>
+<img class="x1" src="img/c.jpg" width="100" height="80">
+<p>Nilai default z-index adalah 0 .z-index 1 memiliki prioritas lebih tinggi, sedangkan z-index -1 memiliki prioritas lebih rendah.</p>
+<p></p>
+<img class="x2" src="img/c.jpg" width="100" height="80">
+<p>Sekarang anda bisa membandingkan dengan tampilan di bagian bawah ini. apakah masih terhalang gambar ?</p>
+
+<!-- Nomor 8 -->
+<a name="no8"><h1>Nomor 8</h1></a>
+<p>Gerakkan pointer mouse di atas link-link di bawah ini untuk membuat link tersebut berubah tampilannya.</p>
+<p><a class="one" href="@">Mengubah properti color</a></p>
+<p><a class="two" href="@">Mengubah properti font-size</a></p>
+<p><a class="three" href="@">Mengubah properti background color</a></p>
+<p><a class="four" href="@">Mengubah properti font-family</a></p>
+<p><a class="five" href="@">Mengubah properti text-decoration</a></p>
+</div>
+<div class="grid">
+					<figure class="effect-hera">
+						<img src="img/17.jpg" alt="img17"/>
+						<figcaption>
+							<h2>FTIK <span>2014</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-image-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-code-o"></i></a>
+							</p>
+						</figcaption>			
+					</figure>
+					<figure class="effect-hera">
+						<img src="img/25.jpg" alt="img25" />
+						<figcaption>
+							<h2>FTIK <span>2014</span></h2>
+							<p>
+								<a href="#"><i class="fa fa-fw fa-file-pdf-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-image-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-archive-o"></i></a>
+								<a href="#"><i class="fa fa-fw fa-file-code-o"></i></a>
+							</p>
+						</figcaption>			
+					</figure>
+				</div>
+				<br>
+</body>
+</html>
+
+
+
+
+
+
+<style>
+.menu{
+	padding:0 0 15 0;
+	color:#666;
+	text-decoration:none;
+	margin:0 20 0 20;
+}
+.menu:hover{
+	-webkit-transition: all .35s ease-in-out;
+	-moz-transition: all .35s ease-in-out;
+	-ms-transition: all .35s ease-in-out;
+	transition: all .35s ease-in-out;
+	border-radius: 2%;	
+	border-bottom:3px solid #740A4E;
+	padding:0px;
+	color:#1F3A93;	
+}
+.div{
+	margin:2cm 8cm 2cm 8cm;
+	background:#DADFE1;
+	padding:2px 1cm 2px 1cm;
+	color:black;
+	border-radius:20px;
+}
+</style>
