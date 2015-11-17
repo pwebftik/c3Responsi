@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php  
+
+function kurang($x,$y)
+{
+		$z=$x-$y;
+		return $z;
+
+}
+function enter()
+{
+		echo""."<br>";
+
+}
+function tambah($x,$y)
+{
+		$z=$x+$y;
+		return $z;
+
+}
+function hitung()
+{
+		echo strlen("tulis");
+
+}
+function tulis($text='')
+{
+		echo "tulis";
+
+}
+tulis("")."<br>";
+enter("");
+echo "5+10=".tambah(5,10);
+enter("");
+echo "20-10=".tambah(20,10);
+enter("");
+hitung("");
+?>
+</body>
+</html>
