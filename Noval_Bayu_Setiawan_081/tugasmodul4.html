@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>MODUL 4 STYLESHEET</title>
+	<style type="text/css">
+
+		body{
+			background: #ccc url("img/gbr1.png") no-repeat fixed center;
+		}
+
+		p.normal{font-weight: normal;}
+		p.tebal{font-weight: bold;}
+		p.teballl{font-weight: 900;}
+		p.lengkap{font: italic small-caps 900 12px arial;}
+
+		p.borderous{
+			border: 6px  dotted silver;
+			border-style: solid;
+			border-width: 5px 10px 1px 15px;
+			border-color: #ff0000 #00ff00 #0000ff rgb(250,0,255);
+		}
+
+		p.margin {margin: 2cm 4cm 3cm 80px}
+		p.margin2 {margin: 0.1cm 0.1cm 0.1cm 5px}
+		div.margin2 {margin: 0.1cm 0.1cm 0.1cm 5px}
+
+		td.x1{ width: 890px;
+			height: 150px;
+		}
+		td.value2 {
+			height: 800px;
+			width: 670px;
+			}
+		td.value1 {
+			height: 800px;
+			width: 150px;
+			}
+		ul {list-style: square inside url("img/gbr2.png")}
+
+		img.x1{
+			position: absolute;
+			left: 0;
+			top: 0;
+			z-index: -1;
+		}
+		img.x2{
+			position: relative;
+			left: 0;
+			top: 100;
+			z-index: 1;
+		}
+
+		a:link{color: #ff0000}
+		a.one: visited {color: #0000ff}
+		a.one: hover {color: #ffcc00}
+		a.two: visited {color: #0000ff}
+		a.two: hover {font-size: 150%}
+		a.three: visited {color: #0000ff}
+		a.three: hover {background: #66ff66}
+		a.four: visited {color: #0000ff}
+		a.four: hover {font-family: fixedsys}
+		a.five: visited {color: #0000ff; text-decoration: line-through}
+		a.five: hover {text-decoration: overline}
+
+		.animated.infinite {
+  			-webkit-animation-iteration-count: infinite;
+  			animation-iteration-count: infinite;
+		}
+		.animated.hinge {
+  		-webkit-animation-duration: 2s;
+  		animation-duration: 5s; 	
+		}
+
+
+		@-webkit-keyframes hinge {
+  			0% {
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+  			}
+
+  			20%, 60% {
+    		-webkit-transform: rotate3d(0, 0, 1, 80deg);
+    		transform: rotate3d(0, 0, 1, 80deg);
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+  			}
+
+  			40%, 80% {
+    		-webkit-transform: rotate3d(0, 0, 1, 60deg);
+    		transform: rotate3d(0, 0, 1, 60deg);
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+    		opacity: 1;
+  			}
+
+  			to {
+    		-webkit-transform: translate3d(0, 700px, 0);
+    		transform: translate3d(0, 700px, 0);
+    		opacity: 0;
+  			}
+		}
+
+		@keyframes hinge {
+  			0% {
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+  			}
+
+  			20%, 60% {
+    		-webkit-transform: rotate3d(0, 0, 1, 80deg);
+    		transform: rotate3d(0, 0, 1, 80deg);
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+  			}
+
+  			40%, 80% {
+    		-webkit-transform: rotate3d(0, 0, 1, 60deg);
+    		transform: rotate3d(0, 0, 1, 60deg);
+    		-webkit-transform-origin: top left;
+    		transform-origin: top left;
+    		-webkit-animation-timing-function: ease-in-out;
+    		animation-timing-function: ease-in-out;
+    		opacity: 1;
+  			}
+
+  			to {
+    		-webkit-transform: translate3d(0, 700px, 0);
+    		transform: translate3d(0, 700px, 0);
+    		opacity: 0;
+  			}
+		}
+
+		.hinge {
+  			-webkit-animation-name: hinge;
+  			animation-name: hinge;
+		}
+	</style>
+</head>
+
+<body>
+
+<div align="center">
+	<table border="2" bgcolor="#c33">
+		<tr>
+
+			<td class="x1">
+				<div align="center">
+				<img class="x2" src="img/gbr1.png" width="100" height="80">
+				<h4>Menggunakan padding sama setiap sisinya 1.5cm</h4>
+				</div>
+			</td>
+		</tr>
+	</table>
+
+	<table bgcolor="#cf9" border="2" width="900">
+		<tr>
+			<td class="value1" valign="top">
+				<div>
+					<ul>
+						<li>Home</li>
+						<li>About</li>
+						<li>Contact</li>
+					</ul>		
+				</div>
+				<div>
+					<p><a class="one" href="html1.html"> Mengubah properti color </a></p>
+					<p><a class="two" href="html2.html"> Mengubah properti font-size </a></p>
+					<p><a class="three" href="html3.html"> Mengubah properti background-color </a></p>
+					<p><a class="four" href="html4.html"> Mengubah properti font-family</a></p>
+					<p><a class="five" href="html5.html"> Mengubah properti text-decoration </a></p>
+				</div>
+			</td>
+			<td class="value2" valign="top">
+				<div class="margin2"> 
+				<h1 class="animated infinite hinge">Headline 1</h1></div>
+
+				<p class="normal"> Perhatikan paragraf ini </p>
+				<p class="tebal"> bandingkan dengan paragraf di atas </p>
+				<p class="teballl"> Perhatikan juga yang ini </p>
+				<p class="lengkap"> Paragraf dengan semua atribut lengkap </p>
+
+				<div>
+					<p align="center">
+						<b>Catatan</b>
+						Properti background-attachment dan background-position tidak bisa digunakan dalam browser Netscape 4.0.
+					</p>
+				</div>
+			</td>
+		</tr>
+		<tr>
+			<td colspan="2" height="40">
+			<p class="margin2">Bandingkan dengan tampilan paragraf ini. Coba anda kecilkan ukuran window browser agar terlihat lebih jelas perbedaannya</p>
+			</td>
+		</tr>
+	</table>
+</div>
+<p><img class="x1" src="img/gbr1.png" width="100" height="80"></p>
+</body>
+</html>
