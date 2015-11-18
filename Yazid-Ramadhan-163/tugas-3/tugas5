@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Modul 5 Responsi PHP</title>
+</head>
+<body>
+<!-- Fungsi Void Text -->
+<br>
+<?php
+	function name($text="nama"){
+		echo " $text <br>";
+	}
+	function nim($no="14150151515"){
+		echo "NIM $no <br>";
+	}
+	name();
+	nim();
+	
+?>
+<br>
+<!-- Fungsi Aritmatika</h2> -->
+<?php
+	function tambah($a,$b){
+		echo "<br>";
+		$hasil = $a + $b;
+		return $hasil;
+	}
+	function kurang($a,$b){
+		echo "<br>";
+		$hasil = $a - $b;
+		return $hasil;
+	}
+	function kali($a,$b){
+		echo "<br>";
+		$hasil = $a * $b;
+		return $hasil;
+	}
+	function bagi($a,$b){
+		echo "<br>";
+		$hasil = $a / $b;
+		return $hasil;
+	}
+	$hasil = tambah(20,33);
+	echo $hasil;
+	$hasil = kurang(20,10);
+	echo $hasil;
+	$hasil = kali(9,9);
+	echo $hasil;
+	$hasil = bagi(80,4);
+	echo $hasil;
+?>
+</body>
+</html>
