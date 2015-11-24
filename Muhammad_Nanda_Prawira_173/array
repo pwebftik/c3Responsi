@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title></title>
+</head>
+<body>
+<?php  
+/*nomor 1*/
+$cars = array("volvo","bmw","toyota");
+echo "i like :".$cars[0].",".$cars[1].",".$cars[2].".";
+/*nomor 2*/
+echo count($cars);
+/*nomor 3*/
+$arrlenght=count($cars);
+for($x=0;$x<$arrlenght;$x++){
+	echo $cars[$x];
+	echo "<br>";
+}
+/*nomor 4*/
+$age=array("peter"=>"35","ben"=>"37","joe"=>"43");
+echo "peter is".$age['peter']."years old.";
+/*nomor 5*/
+foreach($age as $x => $x_value){
+	echo "key=".$x.", Value=".$x_value;
+	echo"<br>";
+/*nomor 6*/	
+$car = array(
+	array("volvo",22,18),
+	array("bmw",15,13),
+	array("Saab",5,2),
+	array("Land Rover",17,15)
+	);
+for($row=0;$row<4;$row++){
+	echo "<p><b>Rpw number $row </b></p>";
+	echo "<ul>";
+	for($col=0;$col<3;$col++){
+		echo "<li>".$car[$row][$col]."</li>";
+	}
+}
+}
+?>
+</body>
+</html>
