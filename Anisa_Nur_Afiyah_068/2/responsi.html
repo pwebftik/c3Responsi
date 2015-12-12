@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <style>
+  thead {color:green;}
+  tbody {color:blue;}
+  tfoot {color:red;}
+
+    table, th, td {
+      border: 1px solid pink;
+    }
+  </style>
+</head>
+<body>
+
+  <table> <!--Mendefinisikan sebuah table-->
+    <caption>Tabungan</caption> <!--Mendefinisikan sebuah caption untuk table-->
+    <colgroup> <!--Mendefinisikan sekelompok kolom dalam tabel-->
+    <col span="2" style="background-color:black"> <!--Mendefinisikan nilai atribut untuk  satu atau lebih kolom dalam suatu tabel-->
+    <col style="background-color:yellow">
+  </colgroup>
+  <thead> <!--Mendefinisikan suatu head tabel-->
+  <tr> <!--Mendefinisikan suatu baris dalam tabel-->
+    <th>Tahun</th> <!--Mendefinisikan suatu barisan dalam table-->
+    <th>Bulan</th>
+    <th>Tabungan</th>
+  </tr>
+  </thead>
+  <tbody> <!--Mendefinisikan suatu body tabel-->
+  <tr> 
+    <td>2014</td> <!--Mendefinisikan sebuah sel dalam table-->
+    <td>Desember</td>
+    <td>15000</td>
+  </tr>
+  <tr> 
+    <td>2015</td> 
+    <td>Januari</td>
+    <td>20000</td>
+  </tr>
+  <tr> 
+    <td>2015</td> 
+    <td>Maret</td>
+    <td>20000</td>
+  </tr>
+  </tbody>
+  <tfoot> <!--Mendefinisikan suatu footer tabel-->
+  <tr> 
+    <td>Jumlah</td> 
+    <td>-</td>
+    <td>55000</td>
+  </tr>
+  </tfoot>
+</table>
+
+</body>
+</html>
